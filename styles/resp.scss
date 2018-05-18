@@ -1,0 +1,141 @@
+@media screen and (max-width: 795px){
+  
+  .header-container{
+    align-items: center;
+    padding: 20px;
+  }
+  .logo{
+    align-self: baseline;
+  }
+  .logo-name{
+    font-size: $fz*2+9;
+  }
+  nav{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+  }
+  .menu{
+    flex-direction: column;
+    display: none;
+    a{
+      padding: 20px;
+      border-left: 3px solid transparent;
+      border-bottom: none;
+      &:hover{
+        border-bottom: none;
+        border-left: 3px solid #5094f2;
+      }
+    }
+  }
+  .menu-toggle{
+    display: block;
+    align-self: flex-end;
+  }
+  .main{
+    height: 335px;
+    margin-bottom: 20px;
+  }
+  .main-container{
+    img{
+      height: 293px;
+      margin-right: 65px;
+      align-self: baseline
+    }
+  }
+  .txt{
+    line-height: 36px;
+    margin-left: 0;
+    h4{
+      font-size: $fz+11;
+    }
+    p{
+      font-size: $fz+3;
+    }
+  }
+  .sign-up{
+    font-size: $fz+10;
+    margin-left: 0;
+    width: 235px;
+    height: 53px;
+    padding: 10px;
+      img{
+        height: 33px;
+        width: 33px;
+        margin-right: 11px;
+    }
+  }
+  .blocks{
+    padding-top: 0;
+  }
+  .blocks-container{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+      hr{
+        display: block;
+        width: 100%;
+        margin: 10px auto;
+    }
+  }
+  .block{
+    flex-direction: row;
+    margin: 18px auto;
+  }
+  .icon{
+    height: 136px;
+    width: 136px;
+  }
+  .block-icon1{
+    img{
+      height: 79px;
+      width: 57px;
+    }
+  }
+  .block-icon2{ 
+    img{
+      height: 61px;
+      width: 71px;
+    }
+  }
+  .block-icon3{
+    img{
+      height: 71px;
+      width: 78px;
+    }
+  }
+  .block-txt{
+    align-self: center;
+    text-align: left;
+    margin-left: 23px;
+    margin-top: 0;
+      h6{
+        margin-top: 0;
+        font-size: $fz+14;
+    }
+      p{
+        font-size: $fz;
+    }
+  }
+  .cart{
+    margin-top: 40px;
+  }
+  .cart-container{
+    flex-direction: column;
+  }
+  .cart-header{
+    justify-content: center;
+    align-items: center;
+      img{
+        width: 215px;
+    }
+  }
+  .cart-txt{
+    h3{
+      font-size: $fz+14;
+    }
+    p{
+      font-size: ($fz)-3;
+    }
+  }
+}

@@ -1,0 +1,199 @@
+/*scss*/
+$fz:20px;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Segoe WP", sans-serif;
+}
+
+li{
+  list-style: none;
+  display: flex;
+}
+
+a{text-decoration: none;}
+
+p{font-weight: 300;}
+
+hr{
+  height: 1px;
+  color: #e5e5e5;
+}
+.header-container{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+header{background: #fff;}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo-name{
+  color: #000000;
+  font-size: $fz*2;
+  margin-left: 15px;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  a{
+    color: #6c6c6c;
+    font-size: $fz;
+    margin-right: 40px;
+    padding: 51px 5px 19px 5px;
+    border-bottom: 3px solid transparent;
+    &:hover{
+      border-bottom: 3px solid #5094f2;
+    }
+  }
+}
+.menu-toggle{
+  align-self: center;
+  display: none;
+}
+.main{
+  background: url(../img/dsfsdfsdfds.png) no-repeat;
+  background-size: cover;
+}
+.main-container{
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 38px;
+}
+.txt{
+  color: #fff;
+  margin-left: 104px;
+  line-height: 45px;
+   h4{
+    font-weight: 300;
+    font-size: $fz*2;
+  }
+   p{
+    font-size: $fz+6;
+    margin-bottom: 34px;
+  }
+}
+.sign-up{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 172px;
+  height: 41px;
+  background-color: #5094f2;
+  color: #fff;
+  font-size: $fz+2;
+  margin-left: 12px;
+   img{
+     margin-right: 11px;
+  }
+}
+.blocks{
+  background: url(../img/layer-6.png) no-repeat;
+  background-size: cover;
+  padding-top: 57px;
+}
+.blocks-container{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  hr{
+    display: none;
+  }
+}
+.block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  h6{
+    color: #5094f2;
+    font-size: $fz;
+    margin-top: 28px;
+    margin-bottom: 9px;
+  }
+  p{
+    color: #909090;
+    font-size: ($fz)-6;
+  }
+}
+.icon{
+  display: flex;
+  height: 186px;
+  width: 186px;
+  border-radius: 50%;
+  justify-content: center;
+  align-self: center;
+  img{
+    align-self: center;
+  }
+}
+.block-icon1{background-color: #5094f2;}
+.block-icon2{background-color: #d94748;}
+.block-icon3{background-color: #ebbb11;}
+.cart{
+  margin-top: 90px;
+  margin-bottom: 50px;
+}
+.cart-container{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.cart-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h2{
+    color: #6f7173;
+    font-size: $fz*2;
+    font-weight: 400;
+    margin-bottom: 33px;
+  }
+}
+.cart-txt{
+  margin-left: 83px;
+  margin-top: 50px;
+  h3{
+    color: #6f7173;
+    font-size: $fz+6;
+    font-weight: 400;
+    margin-bottom: 34px;
+  }
+  p{
+  color: #909090;
+  font-size: ($fz)-5;
+  line-height: 36px;
+}
+}
+footer{
+  padding-top: 33px;
+  p{
+    color: #909090;
+    font-size: ($fz)-5;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+@font-face { 
+font-family: "Segoe WP"; 
+src: url("../fonts/ofont.ru_Segoe WP.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+
+@import 'resp';
