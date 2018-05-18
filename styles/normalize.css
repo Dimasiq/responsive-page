@@ -21,8 +21,6 @@ html {
  */
 
 body {
-  overflow: auto;
-  overflow-x: hidden;
   margin: 0;
 }
 
@@ -47,7 +45,8 @@ h1 {
 hr {
   box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
-  overflow: visible; /* 2 */
+  border-right: none;
+  border-left: none;
 }
 
 /**
