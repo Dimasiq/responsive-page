@@ -1,6 +1,12 @@
 /*scss*/
 $fz:20px;
 
+@mixin color($color){
+  color: $color;
+}
+@mixin heading-color($heading-color){
+  color: $heading-color;
+}
 *{
   margin: 0;
   padding: 0;
@@ -44,7 +50,7 @@ header{background: #fff;}
   display: flex;
   justify-content: space-between;
   a{
-    color: #6c6c6c;
+    @include heading-color(#6f7173);
     font-size: $fz;
     margin-right: 40px;
     padding: 51px 5px 19px 5px;
@@ -123,8 +129,8 @@ header{background: #fff;}
     margin-top: 28px;
     margin-bottom: 9px;
   }
-  p{
-    color: #909090;
+  .block-text{
+    @include color(#909090);
     font-size: ($fz)-6;
   }
 }
@@ -157,7 +163,7 @@ header{background: #fff;}
   flex-direction: column;
   justify-content: center;
   h2{
-    color: #6f7173;
+    @include heading-color(#6f7173);
     font-size: $fz*2;
     font-weight: 400;
     margin-bottom: 33px;
@@ -166,24 +172,22 @@ header{background: #fff;}
 .cart-txt{
   margin-left: 83px;
   margin-top: 50px;
-  h3{
-    color: #6f7173;
+  .cart-txt-heading{
+    @include heading-color(#6f7173);
     font-size: $fz+6;
     font-weight: 400;
     margin-bottom: 34px;
   }
-  p{
-  color: #909090;
-  font-size: ($fz)-5;
+  .cart-txt-main{
+  @extend .block-text;
+  @include color(#909090);
   line-height: 36px;
 }
 }
 footer{
   padding-top: 33px;
-  p{
-    color: #909090;
-    font-size: ($fz)-5;
-    line-height: 36px;
+  .footer-text{
+    @include color(#909090);
     text-align: center;
     margin-bottom: 40px;
   }

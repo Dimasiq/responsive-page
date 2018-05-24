@@ -43,7 +43,7 @@ header {
   display: flex;
   justify-content: space-between; }
   .menu a {
-    color: #6c6c6c;
+    color: #6f7173;
     font-size: 20px;
     margin-right: 40px;
     padding: 51px 5px 19px 5px;
@@ -115,7 +115,7 @@ header {
     font-size: 20px;
     margin-top: 28px;
     margin-bottom: 9px; }
-  .block p {
+  .block .block-text, .block .cart-txt .cart-txt-main, .cart-txt .block .cart-txt-main {
     color: #909090;
     font-size: 14px; }
 
@@ -161,22 +161,19 @@ header {
 .cart-txt {
   margin-left: 83px;
   margin-top: 50px; }
-  .cart-txt h3 {
+  .cart-txt .cart-txt-heading {
     color: #6f7173;
     font-size: 26px;
     font-weight: 400;
     margin-bottom: 34px; }
-  .cart-txt p {
+  .cart-txt .cart-txt-main {
     color: #909090;
-    font-size: 15px;
     line-height: 36px; }
 
 footer {
   padding-top: 33px; }
-  footer p {
+  footer .footer-text {
     color: #909090;
-    font-size: 15px;
-    line-height: 36px;
     text-align: center;
     margin-bottom: 40px; }
 
@@ -299,9 +296,9 @@ footer {
     .cart-header img {
       width: 215px; }
 
-  .cart-txt h3 {
+  .cart-txt .cart-txt-heading {
     font-size: 34px; }
-  .cart-txt p {
+  .cart-txt .cart-txt-main {
     font-size: 17px; } }
 
 /*# sourceMappingURL=style.css.map */
